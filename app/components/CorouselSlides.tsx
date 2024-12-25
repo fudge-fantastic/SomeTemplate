@@ -12,12 +12,12 @@ import {
 import { Link } from "@remix-run/react";
 
 const navLinks = [
-  { name: "Tis HomePage itself", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Projects", path: "/projects" },
-  { name: "Skills", path: "/skills" },
-  { name: "Blog", path: "/blog" },
-  { name: "Contact", path: "/contact" },
+  {id: 1,name: "Tis HomePage itself", path: "/" },
+  {id: 2,name: "About", path: "/about" },
+  {id: 3,name: "Projects", path: "/projects" },
+  {id: 4,name: "Skills", path: "/skills" },
+  {id: 5,name: "Blog", path: "/blog" },
+  {id: 6,name: "Contact", path: "/contact" },
 ];
 
 export default function CarouselPlugin() {
@@ -33,11 +33,11 @@ export default function CarouselPlugin() {
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
-        {navLinks.map((link, index) => (
-          <CarouselItem key={index}>
+        {navLinks.map((link) => (
+          <CarouselItem key={link.id}>
             <div className="p-0">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6 shadow-md bg-zinc-50 dark:bg-zinc-900 rounded-md">
+                <CardContent className="flex flex-row aspect-square items-center justify-center p-6 shadow-md bg-zinc-50 dark:bg-zinc-900 rounded-md">
                   <Link to={link.path} className="text-lg font-semibold text-center">{link.name}</Link>
                 </CardContent>
               </Card>

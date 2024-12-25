@@ -1,6 +1,6 @@
 import { FlipWords } from "./ui/flip-words"
 import CodeBlockDemo from "./codeBlock"
-import CarouselDemo from "./CorouselSlides"
+// import CarouselDemo from "./CorouselSlides"
 // import { ScrollArea } from "./ui/scroll-area"
 
 export default function Hero() {
@@ -10,18 +10,20 @@ export default function Hero() {
     // console.log(code)  
 
     return (
-        <div className="mx-6 flex gap-4 mb-4">
-            <div className="flex flex-col gap-4">
-                <div className="rounded-lg dark:bg-zinc-900 bg-zinc-100 shadow-md px-6 py-5 ">
+        <div className="mx-6 gap-4 mb-4 md:flex md:h-[78vh]">
+            <div className="md:flex flex-col justify-between gap-4 w-full md:w-1/2">
+                <div className="rounded-lg dark:bg-zinc-900 bg-zinc-100 shadow-md px-6 py-5 mb-4 md:mb-0 flex-1">
                     <h2 className="tracking-normal text-[15px]">Hello, I&apos;m <span className="font-semibold text-2xl">Aaditya Pandagle</span>. A part-time human, </h2>
-                    <h2 className="tracking-normal text-[15px]">and a full-time <span className="text-2xl"><FlipWords words={roles} className="font-semibold" /></span></h2>
+                    <h2 className="tracking-normal text-[15px] relative">and a full-time <span className="text-2xl"><FlipWords words={roles} className="font-semibold" /></span></h2>
                     <p className="text-sm pt-3 tracking-wide">A tech enthusiast hailing <span className='font-semibold dark:text-yellow-300'>from Mumbai</span> but happily stranded <span className='font-semibold dark:text-yellow-300'>in Pune</span>. I dabble in code—well, maybe more than dabble. My curiosity has a knack for leading me astray, think of me as the adventurous coder who&apos;s always one click away from unleashing chaos ⚆ _ ⚆</p>
                 </div>
-                <div className="flex justify-center px-12">
-                    <CarouselDemo />
+                <div className="rounded-lg dark:bg-zinc-900 bg-zinc-100 shadow-md px-6 py-5 mb-4 md:mb-0 flex-1">
+                    <h2 className="tracking-normal text-[15px]">Hello, I&apos;m <span className="font-semibold text-2xl">Aaditya Pandagle</span>. A part-time human, </h2>
+                    <h2 className="tracking-normal text-[15px] relative">and a full-time <span className="text-2xl"><FlipWords words={roles} className="font-semibold" /></span></h2>
+                    <p className="text-sm pt-3 tracking-wide">A tech enthusiast hailing <span className='font-semibold dark:text-yellow-300'>from Mumbai</span> but happily stranded <span className='font-semibold dark:text-yellow-300'>in Pune</span>. I dabble in code—well, maybe more than dabble. My curiosity has a knack for leading me astray, think of me as the adventurous coder who&apos;s always one click away from unleashing chaos ⚆ _ ⚆</p>
                 </div>
             </div>    
-            <div>
+            <div className="w-full md:w-1/2 bg-zinc-900 dark:bg-zinc-900 overflow-auto mb-4 md:mb-0 md:h-[78vh]">
                 <CodeBlockDemo code={code} language="jsx" />
             </div>        
         </div>
@@ -31,7 +33,8 @@ export default function Hero() {
 const code = `
 lit age be 22 rn 
 lit alias be ["Bluesalt", "fudge_fantastic"] rn
-lit skills be ["Coding", "Breaking stuff", "Accidental genius moments", "Chess", "Sketching anatomy and Portraits"] rn
+lit skills be ["Coding", "Breaking stuff", "Accidental genius moments", 
+"Chess", "Sketching anatomy and Portraits"] rn
 lit mood be "Confused but Vibing" rn
 
 fuck_around {
