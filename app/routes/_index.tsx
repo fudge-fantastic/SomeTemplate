@@ -11,13 +11,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
-      <Transition>
-        <div>
-          <Hero />
-        </div>
-      </Transition>
-    </div>
+    <Transition>
+      <Hero />
+    </Transition>
   );
 }
 

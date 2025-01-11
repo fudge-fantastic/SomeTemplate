@@ -45,7 +45,7 @@ export default function ProjectsDisplay() {
               </Link>
               <span className="text-xs font-semibold">{project.status}</span>
             </div>
-            <p className="text-sm dark:text-zinc-400 line-clamp-4">{project.description}</p>
+            <p className="text-sm dark:text-zinc-400 line-clamp-5">{project.description}</p>
             <div className="my-2">
                 {project.tags.map((tag, tagIndex) => (
                   <Badge key={tagIndex} className="tag mr-2 mb-1">
