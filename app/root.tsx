@@ -13,6 +13,7 @@ import { AnimatePresence } from "framer-motion";
 
 import "./tailwind.css";
 import { ScrollArea } from "./components/ui/scroll-area";
+import Footer from "./components/Footer";
 
 export const links: LinksFunction = () => [
     { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -43,6 +44,7 @@ export function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
                         {children}
                         <ScrollRestoration />
                         <Scripts />
+                        <Footer />
                     </ScrollArea>
                 </ThemeProvider>
             </body>

@@ -4,8 +4,8 @@ import Transition from "~/components/transition";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "fudge-fantastic" },
+    { name: "description", content: "What the fuck is oatmeal!" },
   ];
 };
 
