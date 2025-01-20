@@ -1,4 +1,5 @@
 import { MetaFunction } from "@remix-run/react";
+import TimelineLayout from "~/components/TimeLine/timeline-layout";
 import Transition from "~/components/transition";
 
 export const meta: MetaFunction = () => {
@@ -11,8 +12,8 @@ export const meta: MetaFunction = () => {
 export default function About() {
     return (
         <Transition>
-            <div>
-                <h1>About</h1>
+            <div> 
+                <TimelineLayout />
             </div>
         </Transition>
     );

@@ -9,6 +9,7 @@ import { Button } from "~/components/ui/button";
 import DarkModeToggler from "~/components/dark-mode-toggler";
 
 const navLinks = [
+  { href: "/", name: "Home" },
   { href: "/about", name: "About" },
   { href: "/projects", name: "Projects" },
   { href: "/blogs", name: "Blogs" },
@@ -48,7 +49,7 @@ export default function NavBar() {
                         <div className="flex flex-col space-y-4">
                         {navLinks.map((link) => (
                             <Link key={link.href} to={link.href}>
-                            <Button variant="ghost" className="w-full text-left">
+                            <Button variant="ghost" className="w-full text-left font-semibold uppercase text-sm">
                                 {link.name}
                             </Button>
                             </Link>

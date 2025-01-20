@@ -42,9 +42,9 @@ export function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
                     <ScrollArea className="h-screen">
                         <NavBar />
                         {children}
+                        <Footer />
                         <ScrollRestoration />
                         <Scripts />
-                        <Footer />
                     </ScrollArea>
                 </ThemeProvider>
             </body>
