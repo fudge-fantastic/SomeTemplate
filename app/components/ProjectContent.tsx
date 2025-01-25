@@ -21,9 +21,9 @@ export default function ProjectsDisplay() {
   return (
     <div className="w-full">
       {/* Search Input */}
-      <div className="mb-4">
+      <div className="mb-3 md:mb-4">
         <input type="text" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}
-          className="text-sm w-full p-2 border rounded-md bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-200 outline-none"
+          className="text-xs md:text-sm w-full p-2 border rounded-md bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-200 outline-none"
           placeholder="Search projects by name, description, or tags..."
         />
       </div>
@@ -40,15 +40,15 @@ export default function ProjectsDisplay() {
             )}
             <div className="flex justify-between items-center mb-2">
               <Link to={project.link.github} target="blank" className="flex items-baseline gap-1 hover:underline decoration-[1.3px] underline-offset-2">
-                <h2 className="font-semibold text-lg">{project.name}</h2>
-                <FaLink className="text-[12px]" />
+                <h2 className="font-semibold text-[17px] md:text-lg">{project.name}</h2>
+                <FaLink className="text-[10px] md:text-[12px]" />
               </Link>
               <span className="text-xs font-semibold">{project.status}</span>
             </div>
-            <p className="text-sm dark:text-zinc-400 line-clamp-5">{project.description}</p>
+            <p className="md:text-sm text-xs dark:text-zinc-400 line-clamp-5">{project.description}</p>
             <div className="my-2">
                 {project.tags.map((tag, tagIndex) => (
-                  <Badge key={tagIndex} className="tag mr-2 mb-1 text-white dark:text-black">
+                  <Badge key={tagIndex} className="tag mr-2 mb-1 text-white dark:text-black text-[11px] md:text-xs">
                     {tag}
                   </Badge>
                 ))}
