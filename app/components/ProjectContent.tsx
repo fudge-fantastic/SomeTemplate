@@ -6,7 +6,7 @@ import { Link } from "@remix-run/react";
 
 export default function ProjectsDisplay() {
   const [searchTerm, setSearchTerm] = useState("");
-  const projectContainerStyle = "py-3 px-4 rounded-lg border border-zinc-700";
+  const projectContainerStyle = "py-3 px-4 rounded-lg border border-zinc-900 dark:border-zinc-400";
 
   // Filter projects based on the search term
   const filteredProjects = SomeProjects.filter((project) => {
@@ -48,7 +48,7 @@ export default function ProjectsDisplay() {
             <p className="text-sm dark:text-zinc-400 line-clamp-5">{project.description}</p>
             <div className="my-2">
                 {project.tags.map((tag, tagIndex) => (
-                  <Badge key={tagIndex} className="tag mr-2 mb-1 text-black">
+                  <Badge key={tagIndex} className="tag mr-2 mb-1 text-white dark:text-black">
                     {tag}
                   </Badge>
                 ))}

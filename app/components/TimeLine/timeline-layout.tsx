@@ -13,7 +13,7 @@ export default function TimelineLayout() {
             id: "1",
             title: "Started Coding Journey",
             description: "Began learning HTML, CSS, and JavaScript to build basic websites.",
-            date: "2020-01-15",
+            date: "15th December 2002",
         },
         {
             id: "2",

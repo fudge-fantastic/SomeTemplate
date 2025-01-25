@@ -17,9 +17,9 @@ const navLinks = [
 
 export default function NavBar() {
   return (
-    <div className="flex flex-row justify-between items-center px-4 py-3 mx-2 uppercase">
-      <Link to="/" className="flex flex-row gap-2 items-center">
-        <div className="size-7 dark:bg-zinc-800 bg-zinc-900 rounded-md"></div>
+    <div className="flex flex-row justify-between items-center md:px-4 py-3 mx-2 uppercase">
+      <Link to="/" className="flex flex-row gap-1 md:gap-2 items-center">
+        <div className="size-6 md:size-7 dark:bg-zinc-800 bg-zinc-900 rounded-md"></div>
         <div className="text-md font-semibold">BlueSalt</div>
       </Link>
 
@@ -35,7 +35,7 @@ export default function NavBar() {
       </div>
 
       {/* Mobile Drawer Menu */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center md:gap-3 gap-2">
         <div className="md:hidden">
             <Drawer>
             <DrawerTrigger asChild>
