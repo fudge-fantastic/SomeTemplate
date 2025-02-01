@@ -4,7 +4,7 @@ import Transition from "~/components/transition";
 export default function Projects() {
     return (
         <Transition>
-            <div className="mx-2 md:mx-6 flex">    
+            <div className="mx-3 md:mx-6 flex">    
                 <ProjectsDisplay />
             </div>
         </Transition>

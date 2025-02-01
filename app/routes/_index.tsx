@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import type { MetaFunction } from "@remix-run/node";
 import Hero from "~/components/Hero";
 import Transition from "~/components/transition";

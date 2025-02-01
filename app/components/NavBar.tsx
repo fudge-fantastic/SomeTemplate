@@ -17,7 +17,7 @@ const navLinks = [
 
 export default function NavBar() {
   return (
-    <div className="flex flex-row justify-between items-center md:px-4 py-3 mx-2 uppercase">
+    <div className="flex flex-row justify-between items-center md:px-3 py-3 mx-3 uppercase">
       <Link to="/" className="flex flex-row gap-1 md:gap-2 items-center">
         <div className="size-6 md:size-7 dark:bg-zinc-800 bg-zinc-900 rounded-md"></div>
         <div className="text-md font-semibold">BlueSalt</div>
@@ -49,7 +49,7 @@ export default function NavBar() {
                         <div className="flex flex-col space-y-4">
                         {navLinks.map((link) => (
                             <Link key={link.href} to={link.href}>
-                            <Button variant="ghost" className="w-full text-left font-semibold uppercase text-sm">
+                            <Button variant="ghost" className="w-full text-left font-semibold uppercase text-xs">
                                 {link.name}
                             </Button>
                             </Link>

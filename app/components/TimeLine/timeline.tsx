@@ -9,7 +9,7 @@ const Timeline = React.forwardRef<HTMLDivElement,React.HTMLAttributes<HTMLDivEle
 Timeline.displayName = 'Timeline';
 
 const TimelineItem = React.forwardRef<HTMLDivElement,React.LiHTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn('group relative pb-6 pl-8 sm:pl-44', className)} {...props} />));
+  <div ref={ref} className={cn('group relative pb-6 pl-8', className)} {...props} />));
 TimelineItem.displayName = 'TimelineItem';
 
 const TimelineHeader = React.forwardRef<HTMLParagraphElement,React.HTMLAttributes<HTMLParagraphElement>>(({ className, ...props }, ref) => (
