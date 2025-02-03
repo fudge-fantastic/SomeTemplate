@@ -18,8 +18,6 @@ export default function About() {
                   <p className="text-sm">{dummyData}</p>
                 </div>
             </div>
-            <div>
-            </div>
         </Transition>
     );
 }

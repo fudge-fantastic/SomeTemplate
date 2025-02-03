@@ -9,7 +9,7 @@ import { Button } from "~/components/ui/button";
 import DarkModeToggler from "~/components/dark-mode-toggler";
 
 const navLinks = [
-  { href: "/", name: "Home" },
+  // { href: "/", name: "Home" },
   { href: "/about", name: "About" },
   { href: "/projects", name: "Projects" },
   { href: "/blogs", name: "Blogs" },
@@ -19,8 +19,7 @@ export default function NavBar() {
   return (
     <div className="flex flex-row justify-between items-center md:px-3 py-3 mx-3 uppercase">
       <Link to="/" className="flex flex-row gap-1 md:gap-2 items-center">
-        <div className="size-6 md:size-7 dark:bg-zinc-800 bg-zinc-900 rounded-md"></div>
-        <div className="text-md font-semibold">BlueSalt</div>
+        <div className="text-lg font-semibold px-1">BlueSalt</div>
       </Link>
 
       {/* Desktop Navigation Links */}

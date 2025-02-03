@@ -42,9 +42,21 @@ export default function Hero() {
         };
     }, []);
 
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        const matchDark = window.matchMedia("(prefers-color-scheme: dark)");
+        setIsDarkMode(matchDark.matches);
+
+        const handleChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => setIsDarkMode(e.matches);
+        matchDark.addEventListener("change", handleChange);
+
+        return () => matchDark.removeEventListener("change", handleChange);
+    }, []);
+
     return (
-        <div className="flex mx-3 md:mx-6 gap-4 mb-2 h-full">
-            <div className="rounded-lg dark:bg-zinc-900 border border-zinc-900 px-4 md:px-7 md:py-5 py-3 pb-4 flex-1">
+        <div className="md:flex mx-3 md:mx-6 gap-4 mb-2 h-full">
+            <div className="rounded-lg dark:bg-zinc-900 bg-zinc-50 shadow-lg px-4 md:px-5 md:py-3 py-3 pb-4 lg:w-2/3 lg:h-[235px] md:h-[235px] sm:h-[235px]">
                 <h2 className="tracking-normal text-[14px] md:text-[16px]">Hello, I&apos;m{" "}
                     <span className="font-semibold md:text-2xl text-lg">Aaditya Pandagle</span>. A part-time human,{" "}
                 </h2>
@@ -69,6 +81,10 @@ export default function Hero() {
                     </button>
                 </a>
             </div>
+            <img 
+                src={isDarkMode ? "public/luna2.jpg" : "public/dog_piano.jpg"} 
+                alt="Aaditya Pandagle" 
+                className="rounded-lg md:w-1/3 hidden lg:block h-[235px] object-cover scale-x-[-1]"></img>
         </div>
     );
 }
