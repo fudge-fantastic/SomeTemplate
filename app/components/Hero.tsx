@@ -43,7 +43,6 @@ export default function Hero() {
     }, []);
 
     const [isDarkMode, setIsDarkMode] = useState(false);
-
     useEffect(() => {
         const matchDark = window.matchMedia("(prefers-color-scheme: dark)");
         setIsDarkMode(matchDark.matches);
@@ -81,10 +80,13 @@ export default function Hero() {
                     </button>
                 </a>
             </div>
+
+            {/* Image that changes based on Dark Mode */}
             <img 
-                src={isDarkMode ? "public/luna2.jpg" : "public/dog_piano.jpg"} 
+                src={isDarkMode ? "/luna.jpg" : "/dog_piano.jpg"} 
                 alt="Aaditya Pandagle" 
-                className="rounded-lg md:w-1/3 hidden lg:block h-[235px] object-cover scale-x-[-1]"></img>
+                className="rounded-lg md:w-1/3 hidden lg:block h-[235px] object-cover scale-x-[-1]"
+            />
         </div>
     );
 }
