@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import type { MetaFunction } from "@remix-run/node";
+import Cards from "~/components/cards";
 import Hero from "~/components/Hero";
 import Transition from "~/components/transition";
 
@@ -14,6 +15,7 @@ export default function Index() {
   return (
     <Transition>
       <Hero />
+      <Cards />
     </Transition>
   );
 }

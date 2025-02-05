@@ -84,3 +84,17 @@
 // `
 ```
 
+```tsx
+A tech enthusiast hailing{" "}
+                    <span className="font-semibold dark:text-yellow-300">from Mumbai</span>{" "}but happily stranded{" "}
+                    <span className="font-semibold dark:text-yellow-300">in Pune</span>
+                    . Armed with a BCA and a shiny PG degree in Data Science and
+                    Analytics, I’m basically a glorified spreadsheet wizard who
+                    occasionally ventures into AI and breaks it for sport. My
+                    curiosity has a knack for leading me astray, think of me as
+                    the adventurous coder who&apos;s always one click away from
+                    unleashing chaos ⚆ _ ⚆
+```
+
+<!-- REF -->
+<!-- https://www.youtube.com/watch?v=l9W8utzrZTM&t=301s&ab_channel=TimeToProgram -->

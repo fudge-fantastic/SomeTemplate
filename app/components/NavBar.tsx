@@ -19,7 +19,7 @@ export default function NavBar() {
   return (
     <div className="flex flex-row justify-between items-center md:px-3 py-3 mx-3 uppercase">
       <Link to="/" className="flex flex-row gap-1 md:gap-2 items-center">
-        <div className="text-lg font-semibold px-1">BlueSalt</div>
+        <div className="text-lg font-semibold px-3 py-1 border border-zinc-900 bg-zinc-50 dark:text-zinc-50 dark:bg-zinc-900 rounded-lg">BlueSalt</div>
       </Link>
 
       {/* Desktop Navigation Links */}
