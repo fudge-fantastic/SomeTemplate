@@ -45,9 +45,9 @@ export default function Hero() {
     }, []);
 
     return (
-        <div className="md:flex mx-3 md:mx-6 gap-4 mb-2 h-full">
-            <div className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 md:py-4 py-3 pb-4 lg:w-3/5 lg:h-[220px] md:h-[220px] sm:h-[235px]">
-                <h2 className="tracking-normal text-[14px] md:text-[16px]">Hello <span className="text-xl">👋</span>, I&apos;m{" "}
+        <div className="md:flex mx-3 md:mx-6 gap-4 pb-1 h-full">
+            <div className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 py-3 pb-4 lg:w-3/5 lg:h-[220px] md:h-[240px] sm:h-[235px]">
+                <h2 className="tracking-normal text-[14px] md:text-[16px]">Hello <span className="md:text-xl text-md">👋</span>, I&apos;m{" "}
                     <span className="font-semibold md:text-[26px] text-lg px-1">Aaditya Pandagle.</span> A part-time human,{" "}
                 </h2>
                 <h2 className="tracking-normal text-[14px] md:text-[16px] relative">and a full-time{" "}
@@ -65,7 +65,6 @@ export default function Hero() {
                 </a>
             </div>
 
-            {/* Image that changes based on Dark Mode */}
             <img 
                 src="/dog_piano.jpg" 
                 alt="Aaditya Pandagle" 

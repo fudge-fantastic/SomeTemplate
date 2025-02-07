@@ -17,16 +17,16 @@ const navLinks = [
 
 export default function NavBar() {
   return (
-    <div className="flex flex-row justify-between items-center md:px-3 py-3 mx-3 uppercase">
+    <div className="flex flex-row justify-between items-center md:px-3 py-2 mx-3 uppercase">
       <Link to="/" className="flex flex-row gap-1 md:gap-2 items-center">
-        <div className="text-lg font-semibold px-3 py-1 border border-zinc-900 bg-zinc-50 dark:text-zinc-50 dark:bg-zinc-900 rounded-lg">BlueSalt</div>
+        <div className="md:text-md font-semibold px-4 py-1 border border-zinc-900 bg-zinc-50 dark:text-zinc-50 dark:bg-zinc-900 rounded-md">BlueSalt</div>
       </Link>
 
       {/* Desktop Navigation Links */}
       <div className="hidden md:flex flex-row gap-0">
         {navLinks.map((link) => (
           <Link key={link.href} to={link.href}>
-            <Button variant="ghost" className="font-semibold text-xs uppercase">
+            <Button variant="ghost" className="font-semibold text-[11px] uppercase">
               {link.name}
             </Button>
           </Link>
@@ -38,7 +38,7 @@ export default function NavBar() {
         <div className="md:hidden">
             <Drawer>
             <DrawerTrigger asChild>
-                <button className="flex items-center text-2xl bg-zinc-200 dark:bg-zinc-800 p-1 rounded-md hover:bg-zinc-300 dark:hover:bg-zinc-700 duration-200">
+                <button className="flex items-center text-2xl bg-zinc-200 dark:bg-zinc-900 p-1 rounded-md hover:bg-zinc-300 dark:hover:bg-zinc-800 duration-200">
                     <IoMenu />
                 </button>
             </DrawerTrigger>
