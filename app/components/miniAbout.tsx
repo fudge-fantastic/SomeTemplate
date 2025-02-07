@@ -4,8 +4,8 @@ export default function MiniAbout() {
     return (
         <div className="mx-3 md:mx-6 md:py-2 py-1">
             <div className="flex gap-4">
-                <img  src="/dog_piano.jpg"  alt="Aaditya Pandagle" className="rounded-lg md:w-2/5 hidden lg:block h-[205px] object-cover scale-x-[-1]"/>
-                <div className="md:text-justify text-xs md:text-sm text-justify bg-zinc-900 p-4 rounded-lg sm:h-[210px] lg:h-[205px] lg:w-3/5">
+                <img  src="/dog_piano.jpg"  alt="Aaditya Pandagle" className="rounded-lg md:w-2/5 hidden lg:block h-[200px] object-cover"/>
+                <div className="md:text-justify text-xs md:text-sm text-justify dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 py-3 px-4 rounded-lg sm:h-[210px] lg:h-[200px] lg:w-3/5">
                         <div>
                             <h2 className="text-xl md:text-2xl font-semibold mb-2">About me :D</h2>
                             A tech enthusiast hailing{" "}

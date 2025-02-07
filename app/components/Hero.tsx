@@ -46,12 +46,12 @@ export default function Hero() {
 
     return (
         <div className="md:flex mx-3 md:mx-6 gap-4 pb-1 h-full">
-            <div className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 py-3 pb-4 lg:w-3/5 lg:h-[220px] md:h-[240px] sm:h-[235px]">
+            <div className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 py-3 pb-4 lg:w-3/5 lg:h-[215px] md:h-[240px] sm:h-[235px]">
                 <h2 className="tracking-normal text-[14px] md:text-[16px]">Hello <span className="md:text-xl text-md">👋</span>, I&apos;m{" "}
-                    <span className="font-semibold md:text-[26px] text-lg px-1">Aaditya Pandagle.</span> A part-time human,{" "}
+                    <span className="font-semibold md:text-[24px] text-lg px-1">Aaditya Pandagle.</span> A part-time human,{" "}
                 </h2>
                 <h2 className="tracking-normal text-[14px] md:text-[16px] relative">and a full-time{" "}
-                    <span className="text-lg md:text-[26px] px-1">
+                    <span className="text-lg md:text-[24px] px-1">
                         <FlipWords words={roles} className="font-semibold" />
                     </span>
                 </h2>
@@ -68,7 +68,7 @@ export default function Hero() {
             <img 
                 src="/dog_piano.jpg" 
                 alt="Aaditya Pandagle" 
-                className="rounded-lg md:w-2/5 hidden lg:block h-[220px] object-cover scale-x-[-1]"
+                className="rounded-lg md:w-2/5 hidden lg:block h-[215px] object-cover scale-x-[-1]"
             />
         </div>
     );
