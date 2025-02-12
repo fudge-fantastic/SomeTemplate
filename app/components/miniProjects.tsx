@@ -11,12 +11,15 @@ export default function MiniProjects() {
 
     return (
         <div className="md:mx-6 mx-3">
-            <div className="flex items-center gap-3 md:gap-6 my-5">
+            <div className="flex items-center gap-2 md:gap-4 my-6 mx-1">
                 <div className="flex-1 border-t border-zinc-900 dark:border-zinc-300"></div>
-                <h1 className="text-center text-lg md:text-2xl font-semibold">Featured Projects!</h1>
+                <div className="text-center ">
+                    <h1 className="text-lg md:text-2xl font-semibold">Featured Projects!</h1>
+                    <Link to="/projects" className="md:text-[13px] text-[10px]"><p className="hover:underline hover:underline-offset-2 dark:text-zinc-400">Check out the entire list of projects</p></Link>
+                </div>
                 <div className="flex-1 border-t border-zinc-900 dark:border-zinc-300"></div>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 relative">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 relative">
                 {featuredProjects.map((project, index) => (
                     <div key={index} className={`${projectContainerStyle} relative`}>
                         {/* Live Indicator */}
