@@ -6,7 +6,7 @@ import { Link } from "@remix-run/react";
 
 export default function ProjectsDisplay() {
   const [searchTerm, setSearchTerm] = useState("");
-  const projectContainerStyle = "py-3 px-4 rounded-lg border border-zinc-900 dark:border-zinc-400";
+  const projectContainerStyle = "py-3 px-4 rounded-lg border border-zinc-900 dark:bg-zinc-900";
 
   // Filter projects based on the search term
   const filteredProjects = SomeProjects.filter((project) => {

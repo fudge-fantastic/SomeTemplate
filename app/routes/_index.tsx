@@ -3,6 +3,7 @@ import type { MetaFunction } from "@remix-run/node";
 import Cards from "~/components/cards";
 import Hero from "~/components/Hero";
 import MiniAbout from "~/components/miniAbout";
+import MiniProjects from "~/components/miniProjects";
 import Transition from "~/components/transition";
 
 export const meta: MetaFunction = () => {
@@ -18,6 +19,7 @@ export default function Index() {
       <Hero />
       <Cards />
       <MiniAbout />
+      <MiniProjects />
     </Transition>
   );
 }
