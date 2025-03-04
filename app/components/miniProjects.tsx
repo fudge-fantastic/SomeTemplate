@@ -4,7 +4,7 @@ import { FaLink } from "react-icons/fa";
 import { Link } from "@remix-run/react";
 
 export default function MiniProjects() {
-    const projectContainerStyle = "py-3 px-4 rounded-lg border border-zinc-900 dark:bg-zinc-900";
+    const projectContainerStyle = "py-3 px-4 rounded-lg border border-zinc-900 dark:bg-zinc-900 bg-zinc-50";
 
     // Filter only featured projects
     const featuredProjects = SomeProjects.filter(project => project.featured);

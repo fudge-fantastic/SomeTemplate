@@ -46,7 +46,7 @@ export default function Hero() {
 
     return (
         <div className="md:flex mx-3 md:mx-6 gap-4 pb-1 h-full">
-            <div className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 py-3 pb-4 lg:w-3/5 lg:h-[215px] md:h-[240px] sm:h-[235px]">
+            <div className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 py-3 pb-4 lg:w-3/5 lg:h-[215px] md:h-[210px] sm:h-[190px]">
                 <h2 className="tracking-normal text-[14px] md:text-[16px]">Hello <span className="md:text-xl text-md">👋</span>, I&apos;m{" "}
                     <span className="font-semibold md:text-[24px] text-lg px-1">Aaditya Pandagle.</span> A part-time human,{" "}
                 </h2>
@@ -55,7 +55,7 @@ export default function Hero() {
                         <FlipWords words={roles} className="font-semibold" />
                     </span>
                 </h2>
-                <p className="md:text-justify text-xs md:text-sm pt-3 text-justify">
+                <p className="md:text-justify text-xs md:text-sm pt-2 text-justify">
                     A full-stack data scientist who spends most of my time buried in code, bouncing between projects, and constantly learning something new while letting others collect digital dust 😬. From building full-stack solutions to diving deep into AI, I thrive into breaking things just to make them work even better. 🚀
                 </p>
                 <a href="/Aaditya_Pandagle_Resume.pdf" download="Aaditya_Pandagle_Resume.pdf">

@@ -4,6 +4,7 @@ import Cards from "~/components/cards";
 import Hero from "~/components/Hero";
 import MiniAbout from "~/components/miniAbout";
 import MiniProjects from "~/components/miniProjects";
+import MiniSkills from "~/components/miniSkills";
 import Transition from "~/components/transition";
 
 export const meta: MetaFunction = () => {
@@ -20,6 +21,7 @@ export default function Index() {
       <Cards />
       <MiniAbout />
       <MiniProjects />
+      <MiniSkills />
     </Transition>
   );
 }

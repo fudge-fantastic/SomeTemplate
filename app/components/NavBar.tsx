@@ -9,7 +9,7 @@ import { Button } from "~/components/ui/button";
 import DarkModeToggler from "~/components/dark-mode-toggler";
 
 const navLinks = [
-  // { href: "/", name: "Home" },
+  { href: "/", name: "Home" },
   { href: "/about", name: "About" },
   { href: "/projects", name: "Projects" },
   { href: "/blogs", name: "Blogs" },
