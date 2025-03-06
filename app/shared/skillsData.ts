@@ -18,13 +18,14 @@ export const skillsDataObj = [
     { name: "LangChain", src: "/langchain.svg", category: "generative-ai" },
 
     // AI/MLOps
-    // { name: "MLflow", src: "/mlflow.svg", category: "ai-mlops" },
+    { name: "MLflow", src: "/mlflow.svg", category: "ai-mlops" },
     // { name: "Kubeflow", src: "/kubeflow.svg", category: "ai-mlops" },
     { name: "Docker", src: "/docker.svg", category: "ai-mlops" },
     // { name: "Kubernetes", src: "/kubernetes.svg", category: "ai-mlops" },
     { name: "Jenkins", src: "/jenkins.svg", category: "ai-mlops" },
     { name: "GitLab", src: "/gitlab.svg", category: "ai-mlops" },
     { name: "Prometheus", src: "/prometheus.svg", category: "ai-mlops" },
+    { name: "AWS", src: "/aws.svg", category: "ai-mlops" },
 
     // Programming Languages & Tools
     { name: "Python", src: "/python.svg", category: "programming" },

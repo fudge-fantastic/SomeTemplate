@@ -99,3 +99,10 @@ A tech enthusiast hailing{" "}
 <!-- REF -->
 <!-- https://www.youtube.com/watch?v=l9W8utzrZTM&t=301s&ab_channel=TimeToProgram -->
 <!-- https://www.vshall.me/ -->
+
+
+                <a href="/Aaditya_Pandagle_Resume.pdf" download="Aaditya_Pandagle_Resume.pdf">
+                    <button className="text-[11px] md:text-sm font-semibold bg-zinc-200 hover:bg-zinc-300 py-2 px-3 dark:bg-zinc-800 dark:hover:bg-zinc-700 rounded-md md:mt-4 mt-3 duration-200">
+                        Checkout my CV
+                    </button>
+                </a>
