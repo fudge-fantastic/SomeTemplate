@@ -57,7 +57,7 @@ export default function Hero() {
                         <FlipWords words={roles} className="font-semibold" />
                     </span>
                 </h2>
-                <p className="text-justify md:text-base text-[13px] md:pt-3 pt-2">
+                <p className="text-justify tracking-tight md:text-base text-[13px] md:pt-3 pt-2">
                     A full-stack data scientist who spends most of my time buried in code, bouncing between projects, and constantly learning something new while letting others collect digital dust 😬. From building full-stack solutions to diving deep into AI, I thrive into breaking things just to make them work even better. 🚀
                 </p>
             </div>
