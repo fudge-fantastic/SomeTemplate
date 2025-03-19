@@ -1,7 +1,5 @@
 import { Link } from "@remix-run/react";
 import { useState } from "react";
-import { RiEmotionHappyLine } from "react-icons/ri";
-import { BiHappy } from "react-icons/bi";
 
 export default function MiniAbout() {
     const [isHovered, setIsHovered] = useState(false);
@@ -24,7 +22,7 @@ export default function MiniAbout() {
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                             >
-                                {isHovered ? <BiHappy  className="text-3xl"/> : <RiEmotionHappyLine className="text-3xl" />}
+                                {isHovered ? <div className="text-3xl">😀</div> : <div className="text-3xl">🙂</div>}
                             </Link>
                         </div>
                         A tech enthusiast hailing{" "}

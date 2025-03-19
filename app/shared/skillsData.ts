@@ -16,6 +16,7 @@ export const skillsDataObj = [
     // { name: "Mixtral", src: "/mixtral.svg", category: "generative-ai" },
     // { name: "Tesseract OCR", src: "/tesseract.svg", category: "generative-ai" },
     { name: "LangChain", src: "/langchain.svg", category: "generative-ai" },
+    { name: "QDrant", src: "/qdrant.svg", category: "generative-ai" },
 
     // AI/MLOps
     { name: "MLflow", src: "/mlflow.svg", category: "ai-mlops" },

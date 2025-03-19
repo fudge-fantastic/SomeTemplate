@@ -39,7 +39,7 @@ export default function NavBar() {
         <div className="md:hidden">
           <Drawer>
             <DrawerTrigger asChild>
-              <button className="flex items-center text-2xl shadow-sm hover:shadow-zinc-400 dark:shadow-none hover:shadow-md shadow-zinc-400 dark:bg-zinc-900 p-1 rounded-md dark:hover:bg-zinc-800 duration-200">
+              <button className="flex items-center text-2xl shadow-sm hover:shadow-zinc-400 dark:shadow-none hover:shadow-md shadow-zinc-400 dark:bg-zinc-900 p-1 rounded-md dark:hover:bg-zinc-800 duration-150">
                 <IoMenu />
               </button>
             </DrawerTrigger>
@@ -63,7 +63,7 @@ export default function NavBar() {
 
         {/* Dark Mode Toggle */}
         <a href="/Aaditya_Pandagle_Resume.pdf" download="Aaditya_Pandagle_Resume.pdf">
-          <button className="shadow-sm hover:shadow-zinc-400 dark:shadow-none hover:shadow-md shadow-zinc-400 p-2 rounded-md duration-200 dark:bg-zinc-900">
+          <button className="shadow-sm hover:shadow-zinc-400 dark:shadow-none hover:shadow-md shadow-zinc-400 p-2 rounded-md duration-150 dark:bg-zinc-900">
             <FiFileText />
           </button>
         </a>

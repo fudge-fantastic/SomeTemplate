@@ -18,7 +18,7 @@ const MiniSkills = () => {
                 {skillsDataObj.map((skill) => (
                     <div 
                         key={skill.name} 
-                        className="hover:scale-105 duration-200 flex flex-col items-center justify-center gap-2 bg-zinc-50 border border-zinc-900 dark:bg-zinc-900 rounded-md w-20 h-20"
+                        className="hover:scale-105 duration-150 flex flex-col items-center justify-center gap-2 bg-zinc-50 border border-zinc-900 dark:bg-zinc-900 rounded-md w-20 h-20"
                     >
                         <div className="w-9 h-9 flex items-center justify-center">
                             <img 

@@ -49,7 +49,7 @@ export default function Hero() {
             <div
                 // className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 py-3 pb-4 lg:w-3/5 lg:h-[215px] md:h-[210px] sm:h-[190px]">
                 className="rounded-lg dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 px-4 md:px-5 py-3 pb-4 lg:w-3/5">
-                <h2 className="md:tracking-normal tracking-tighter text-[13px] md:text-[16px]">Hello <span className="md:text-xl text-md">👋</span>, I&apos;m{" "}
+                <h2 className="md:tracking-normal tracking-tighter text-[13px] md:text-[16px]">Hello <span className="md:text-2xl text-lg">👋</span>, I&apos;m{" "}
                     <span className="font-semibold md:text-[26px] text-lg px-1">Aaditya Pandagle.</span> A part-time human,{" "}
                 </h2>
                 <h2 className="tracking-normal text-[13px] md:text-[16px] relative">and a full-time{" "}
@@ -57,7 +57,7 @@ export default function Hero() {
                         <FlipWords words={roles} className="font-semibold" />
                     </span>
                 </h2>
-                <p className="text-justify md:text-base text-[13px] md:pt-3 pt-2">
+                <p className="text-justify md:text-base text-[13px] md:pt-3 pt-2 tracking-tight">
                     A full-stack data scientist who spends most of my time buried in code, bouncing between projects, and constantly learning something new while letting others collect digital dust 😬. From building full-stack solutions to diving deep into AI, I thrive into breaking things just to make them work even better. 🚀
                 </p>
             </div>
