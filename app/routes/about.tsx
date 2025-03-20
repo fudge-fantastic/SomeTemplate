@@ -9,7 +9,7 @@ export const meta: MetaFunction = () => {
 };
 
 export default function About() {
-    const dummyData = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores sit mollitia est, voluptatum illum ad! Rerum laudantium nisi aliquam eos laborum aut sapiente laboriosam est iure deleniti, qui veritatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores sit mollitia est, voluptatum illum ad! Rerum laudantium nisi aliquam eos laborum aut sapiente laboriosam est iure deleniti, qui veritatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores sit mollitia est, voluptatum illum ad! Rerum laudantium nisi aliquam eos laborum aut sapiente laboriosam est iure deleniti, qui veritatis."
+    const dummyData = "A tech enthusiast hailing from Mumbai but happily stranded in Pune. Armed with a BCA and a shiny PG degree in Data Science and Analytics, I’m basically a glorified tech wizard who occasionally ventures into AI and breaks it for sport. My curiosity has a knack for leading me astray, think of me as the adventurous coder who's always one click away from unleashing chaos ⚆ _ ⚆"
     return (
         <Transition>
             <div className="md:mx-6 mx-3 min-h-screen"> 
