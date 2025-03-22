@@ -11,7 +11,6 @@ import { FiFileText } from "react-icons/fi";
 
 const navLinks = [
   { href: "/", name: "Home" },
-  { href: "/about", name: "About" },
   { href: "/projects", name: "Projects" },
   { href: "/blogs", name: "Blogs" },
 ];

@@ -1,11 +1,21 @@
 // Sample projects data
 export const SomeProjects = [
+  { name: "GitTalk",
+    isLive: false, 
+    description: "Who actually wants to dig through commits and meeting notes? Chat with your GitHub repo, get instant code insights, and let AI summarize your chaotic stand-ups into something that actually makes sense. Less guesswork, more doing, powered by LLMs", 
+    status: "Work In Progress", 
+    tags: ["React", "RemixJS", "TailwindCSS", "Prisma", "PostgreSQL", "TypeScript", "Langchain", "Large Language Models"],
+    link: {github: "https://github.com/fudge-fantastic/WordSmith"},
+    category: "Full-Stack Development",
+    featured: true
+  },
   { name: "WordSmith",
     isLive: true, 
     description: "WordSmith is a user-friendly blogging platform designed with an elegant and visually appealing aesthetic. Built using RemixJS and React, it offers a seamless and engaging experience for both writers and readers.", 
     status: "Work In Progress + Live", 
     tags: ["React", "RemixJS", "TailwindCSS", "Prisma", "PostgreSQL", "NextUI", "JavaScript"],
     link: {github: "https://github.com/fudge-fantastic/WordSmith"},
+    category: "Full-Stack Development",
     featured: true
   },
   { name: "Taskly",
@@ -14,6 +24,7 @@ export const SomeProjects = [
     status: "Work In Progress + Live", 
     tags: ["React", "RemixJS", "TailwindCSS", "PostMan", "JavaScript"],
     link: {github: "https://github.com/fudge-fantastic/timesheet-manager"},
+    category: "Full-Stack Development",
     featured: true
   },
   { name: "Portfolio V0.1",
@@ -22,6 +33,7 @@ export const SomeProjects = [
     status: "Closed", 
     tags: ["HTML", "CSS", "JavaScript", "Django"],
     link: {github: "https://github.com/fudge-fantastic/Portfolio_V0.1_CLOSED"},
+    category: "Web Development",
     featured: false
   },
   { name: "Query Forge",
@@ -30,7 +42,8 @@ export const SomeProjects = [
     status: "Work In Progress", 
     tags: ["React", "RemixJS", "TailwindCSS", "QDrant", "Langchain", "NextUI", "Huggingface", "Python", "JavaScript", "Large Language Models"],
     link: {github: "https://github.com/fudge-fantastic/QueryForge"},
-    featured: false
+    category: "AI & ML",
+    featured: true 
   },
   { name: "Generative AI",
     isLive: false, 
@@ -38,7 +51,8 @@ export const SomeProjects = [
     status: "Perpetual", 
     tags: ["Python","Large Language Models"],
     link: {github: "https://github.com/fudge-fantastic/GenerativeAI"},
-    featured: false
+    category: "AI & ML",
+    featured: true
   },
   { name: "LeetCode Solutions",
     isLive: false, 
@@ -46,6 +60,7 @@ export const SomeProjects = [
     status: "Perpetual", 
     tags: ["Python"],
     link: {github: "https://github.com/fudge-fantastic/CLeet"},
+    category: "Competitive Programming",
     featured: false
   },
   { name: "Kaizen (改善)",
@@ -54,6 +69,7 @@ export const SomeProjects = [
     status: "Closed", 
     tags: ["Python", "FastAPI", "Flask", "MLFlow", "Jenkins", "Docker", "CI/CD", "AWS"],
     link: {github: "https://github.com/fudge-fantastic/Kaizen_CLOSED"},
+    category: "DevOps & MLOps",
     featured: true
   },
   { name: "Machine Learning",
@@ -62,6 +78,7 @@ export const SomeProjects = [
     status: "Perpetual", 
     tags: ["Python", "Data Analytics", "Statistical Analysis"],
     link: {github: "https://github.com/fudge-fantastic/Machine_Learning"},
+    category: "AI & ML",
     featured: false
   },
   { name: "Deep Learning",
@@ -70,6 +87,7 @@ export const SomeProjects = [
     status: "Perpetual",
     tags: ["Python", "Tensorflow", "PyTorch", "Computer Vision"],
     link: {github: "https://github.com/fudge-fantastic/Deep_Learning"},
+    category: "AI & ML",
     featured: false
   }
 ];

@@ -1,4 +1,3 @@
-import { Link } from "@remix-run/react";
 import { useState } from "react";
 
 export default function MiniAbout() {
@@ -15,27 +14,21 @@ export default function MiniAbout() {
                 <div className="md:text-justify text-xs md:text-sm text-justify dark:bg-zinc-900 border bg-zinc-50 border-zinc-950 py-3 px-4 rounded-lg lg:w-3/5">
                     <div>
                         <div className="text-xl md:text-2xl font-semibold mb-2 flex items-center gap-1">
-                            <Link to="/about" className="hover:underline underline-offset-2 " >
+                            <div >
                                 About me
-                            </Link>
-                            <Link to="/about"
+                            </div>
+                            <div
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                             >
                                 {isHovered ? <div className="text-3xl">😀</div> : <div className="text-3xl">🙂</div>}
-                            </Link>
+                            </div>
                         </div>
-                        A tech enthusiast hailing{" "}
-                        <span className="font-semibold dark:text-yellow-300">from Mumbai</span>{" "}but happily stranded{" "}
-                        <span className="font-semibold dark:text-yellow-300">in Pune</span>.
-                        Armed with a BCA and a shiny PG degree in Data Science and
-                        Analytics, I’m basically a glorified tech wizard who
-                        occasionally ventures into AI and breaks it for sport. My
-                        curiosity has a knack for leading me astray, think of me as
-                        the adventurous coder who&apos;s always one click away from
-                        unleashing chaos ⚆ _ ⚆
-                        <br /><br /><br />
-                        <span className="font-semibold">You can explore my lore by clicking on the blud who&apos;s smiling or the &apos;About Me&apos;.</span>
+                        Born in <span className="text-red-500 font-bold">Mumbai</span>, exiled to <span className="text-red-500 font-bold">Pune</span>, and now just loitering around in the void of tech. 
+                        Got myself a <span className="text-green-500 font-bold">BCA</span> and a <span className="italic">fancy</span> <span className="text-green-500 font-bold">PG in Data Science and Analytics</span> degree. 
+                        I <span className="font-semibold">sketch human anatomy</span> purely for <span className="italic font-semibold">artistic</span> reasons ⚆ _ ⚆ of course, and occasionally <span className="font-semibold">compose lofi and orchestral tracks</span> because my brain refuses to stick to one obsession.
+                        When I’m not busy breaking my own code, I’m either drowning in music or pretending to be intellectual by reading books. 
+                        I workout so my brain doesn&apos;t completely collapse from the crimes I commit against logic and clean code.
                     </div>
                 </div>
             </div>
